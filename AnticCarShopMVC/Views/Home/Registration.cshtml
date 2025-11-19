@@ -1,0 +1,63 @@
+﻿@model AnticCarShopMVC.Models.TblUser
+@{
+    ViewBag.Title = "Registration";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+
+<center>
+    @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+    {
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <table borger="1" backColor="Yellow">
+            <tr>
+                <td align="center" colspan="2">RegisterNow</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.personName)</td>
+                <td>@Html.TextBoxFor(m => m.personName)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.userName)</td>
+                <td>@Html.TextBoxFor(m => m.userName)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.phone)</td>
+                <td>@Html.TextBoxFor(m => m.phone)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.password)</td>
+                <td>@Html.TextBoxFor(m => m.password)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.postalCode)</td>
+                <td>@Html.TextBoxFor(m => m.postalCode)</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="Submit" value="Registration" />&nbsp;&nbsp;
+                    <input type="Submit" value="Sign In" id="btnSignUp" />
+
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    }
+</center>
+
+
+
+
+
+
+
